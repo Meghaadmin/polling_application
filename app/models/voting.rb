@@ -1,7 +1,7 @@
 class Voting < ActiveRecord::Base
 
   belongs_to :candidate
-  belongs_to :user     ,:foreign_key => 'sele'
+  belongs_to :user     ,:foreign_key => 'selector_id'
 
   def self.final_candidates
     voters = User.selectors.pluck(:id)
