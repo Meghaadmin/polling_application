@@ -1,11 +1,14 @@
 class Voting < ActiveRecord::Base
 
+  belongs_to :candidate
+  belongs_to :user     ,:foreign_key => 'sele'
+
   def self.final_candidates
     voters = User.selectors.pluck(:id)
     candidates_count_M = Voting.where(:selector_id=>voters).group(:candidate_id).count
     highest_count = candidates_count_M.values.sort.reverse.first
     second_highest_count = candidates_count_M.values.sort.reverse.second
-    if highest_count==second_highest_count                          # if there is tie between candidates, then randomly  2 candidates will be selected for final election
+    if highest_count==second_highest_count                          # if there is a tie between candidates, then randomly  2 candidates will be selected for final election
       candidates_count_M.values.sort.reverse.sample(2)
     else
       first_candidate =  candidates_count_M.key(highest_count)        #else two highest vote candidates will be selected for final election

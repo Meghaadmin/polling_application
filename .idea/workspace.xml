@@ -10,19 +10,19 @@
     <file path="/login_controller.rb" changelist="e6ad3093-1333-40b0-8119-f5ce663a7a26" time="1439722374186" ignored="false" />
     <file path="/login.html.erb" changelist="e6ad3093-1333-40b0-8119-f5ce663a7a26" time="1439712005570" ignored="false" />
     <file path="/routes.rb" changelist="e6ad3093-1333-40b0-8119-f5ce663a7a26" time="1439707616159" ignored="false" />
-    <file path="/users_controller.rb" changelist="e6ad3093-1333-40b0-8119-f5ce663a7a26" time="1439726766174" ignored="false" />
-    <file path="/index.html.erb" changelist="e6ad3093-1333-40b0-8119-f5ce663a7a26" time="1439726788636" ignored="false" />
+    <file path="/users_controller.rb" changelist="e6ad3093-1333-40b0-8119-f5ce663a7a26" time="1439744498485" ignored="false" />
+    <file path="/index.html.erb" changelist="e6ad3093-1333-40b0-8119-f5ce663a7a26" time="1439745532061" ignored="false" />
     <file path="/new.html.erb" changelist="e6ad3093-1333-40b0-8119-f5ce663a7a26" time="1439622252458" ignored="false" />
     <file path="/_form.html.erb" changelist="e6ad3093-1333-40b0-8119-f5ce663a7a26" time="1439622338669" ignored="false" />
-    <file path="/candidates_controller.rb" changelist="e6ad3093-1333-40b0-8119-f5ce663a7a26" time="1439727716489" ignored="false" />
+    <file path="/candidates_controller.rb" changelist="e6ad3093-1333-40b0-8119-f5ce663a7a26" time="1439746120143" ignored="false" />
     <file path="/log_out.js.erb" changelist="e6ad3093-1333-40b0-8119-f5ce663a7a26" time="1439623127580" ignored="false" />
     <file path="/user_mailer.rb" changelist="e6ad3093-1333-40b0-8119-f5ce663a7a26" time="1439720705408" ignored="false" />
     <file path="/send_password.html.erb" changelist="e6ad3093-1333-40b0-8119-f5ce663a7a26" time="1439728716876" ignored="false" />
     <file path="/development.rb" changelist="e6ad3093-1333-40b0-8119-f5ce663a7a26" time="1439723891198" ignored="false" />
     <file path="/register.html.erb" changelist="e6ad3093-1333-40b0-8119-f5ce663a7a26" time="1439708686330" ignored="false" />
-    <file path="/user.rb" changelist="e6ad3093-1333-40b0-8119-f5ce663a7a26" time="1439719950263" ignored="false" />
+    <file path="/user.rb" changelist="e6ad3093-1333-40b0-8119-f5ce663a7a26" time="1439744380305" ignored="false" />
     <file path="/application.css" changelist="e6ad3093-1333-40b0-8119-f5ce663a7a26" time="1439643151486" ignored="false" />
-    <file path="/voter.html.erb" changelist="e6ad3093-1333-40b0-8119-f5ce663a7a26" time="1439711521598" ignored="false" />
+    <file path="/voter.html.erb" changelist="e6ad3093-1333-40b0-8119-f5ce663a7a26" time="1439745315352" ignored="false" />
     <file path="/final_candidates.html.erb" changelist="e6ad3093-1333-40b0-8119-f5ce663a7a26" time="1439709819145" ignored="false" />
     <file path="/a.dummy" changelist="e6ad3093-1333-40b0-8119-f5ce663a7a26" time="1439722700781" ignored="false" />
     <file path="/send_mail.html.erb" changelist="e6ad3093-1333-40b0-8119-f5ce663a7a26" time="1439661946190" ignored="false" />
@@ -30,10 +30,9 @@
     <file path="/result.html.erb" changelist="e6ad3093-1333-40b0-8119-f5ce663a7a26" time="1439728704573" ignored="false" />
     <file path="/application.html.erb" changelist="e6ad3093-1333-40b0-8119-f5ce663a7a26" time="1439715261347" ignored="false" />
     <file path="/application_constants.rb" changelist="e6ad3093-1333-40b0-8119-f5ce663a7a26" time="1439715514391" ignored="false" />
-    <file path="/voting.rb" changelist="e6ad3093-1333-40b0-8119-f5ce663a7a26" time="1439727121205" ignored="false" />
-    <file path="/candidate.rb" changelist="e6ad3093-1333-40b0-8119-f5ce663a7a26" time="1439720680702" ignored="false" />
+    <file path="/voting.rb" changelist="e6ad3093-1333-40b0-8119-f5ce663a7a26" time="1439746020631" ignored="false" />
+    <file path="/candidate.rb" changelist="e6ad3093-1333-40b0-8119-f5ce663a7a26" time="1439740880439" ignored="false" />
     <file path="/20150816124235_add_default_admin.rb" changelist="e6ad3093-1333-40b0-8119-f5ce663a7a26" time="1439729130320" ignored="false" />
-    <file path="$PROJECT_DIR$/db/schema.rb" changelist="e6ad3093-1333-40b0-8119-f5ce663a7a26" time="1439729207103" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +51,17 @@
     <favorites_list name="polling" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/candidates/index.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="62" column="67" selection-start="2110" selection-end="2110" vertical-scroll-proportion="0.74201477">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -62,22 +71,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/config/initializers/application_constants.rb" />
         <option value="$PROJECT_DIR$/app/views/user_mailer/final_candidates_mail.html.erb" />
-        <option value="$PROJECT_DIR$/app/models/user.rb" />
-        <option value="$PROJECT_DIR$/app/models/candidate.rb" />
         <option value="$PROJECT_DIR$/app/views/login/login.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/login_controller.rb" />
         <option value="$PROJECT_DIR$/config/environments/development.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/candidates/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/models/voting.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/candidates_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/user_mailer/result.html.erb" />
         <option value="$PROJECT_DIR$/app/views/user_mailer/send_password.html.erb" />
-        <option value="$PROJECT_DIR$/app/mailers/user_mailer.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20150816124235_add_default_admin.rb" />
+        <option value="$PROJECT_DIR$/app/models/candidate.rb" />
+        <option value="$PROJECT_DIR$/app/mailers/user_mailer.rb" />
+        <option value="$PROJECT_DIR$/app/models/user.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/candidates/voter.html.erb" />
+        <option value="$PROJECT_DIR$/app/models/voting.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/candidates_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/candidates/index.html.erb" />
       </list>
     </option>
   </component>
@@ -113,7 +122,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="RailsProjectView" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -123,8 +131,69 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="polling" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="polling" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="polling" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="polling" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="polling" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="polling" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="polling" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="polling" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -380,14 +449,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="31" width="1358" height="595" extended-state="0" />
-    <editor active="false" />
+    <frame x="1" y="31" width="1358" height="595" extended-state="1" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24198474" sideWeight="0.43949044" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24961832" sideWeight="0.43949044" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32908705" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -464,106 +533,112 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/login/login.html.erb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20150816124235_add_default_admin.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="73" selection-start="541" selection-end="541" vertical-scroll-proportion="-9.375" />
+        <state line="5" column="29" selection-start="175" selection-end="175" vertical-scroll-proportion="0.16891892" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/candidates/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="61" selection-start="255" selection-end="255" vertical-scroll-proportion="0.0">
+        <state line="9" column="74" selection-start="337" selection-end="337" vertical-scroll-proportion="0.33919597">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/login_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="46" selection-start="550" selection-end="550" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/environment.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/election.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/user_mailer/final_candidates_mail.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="71" selection-start="722" selection-end="722" vertical-scroll-proportion="0.26777253" />
+        <state line="8" column="40" selection-start="339" selection-end="339" vertical-scroll-proportion="0.2857143">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/candidate.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="5" selection-start="42" selection-end="42" vertical-scroll-proportion="0.10135135" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/initializers/application_constants.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="32" selection-start="85" selection-end="85" vertical-scroll-proportion="0.13513513">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/login_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="50" selection-start="1083" selection-end="1083" vertical-scroll-proportion="1.3513514">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="136" selection-start="538" selection-end="538" vertical-scroll-proportion="-1.9582367">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/candidates/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="56" selection-start="251" selection-end="251" vertical-scroll-proportion="0.22113022">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/voting.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="52" selection-start="379" selection-end="379" vertical-scroll-proportion="0.24361949">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/user_mailer/result.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="65" selection-start="55" selection-end="55" vertical-scroll-proportion="-0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/user_mailer/final_candidates_mail.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="93" selection-start="337" selection-end="337" vertical-scroll-proportion="-3.75">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/user_mailer/send_password.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="54" selection-start="94" selection-end="94" vertical-scroll-proportion="0.03685504">
+        <state line="8" column="51" selection-start="243" selection-end="243" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="11" selection-start="44" selection-end="44" vertical-scroll-proportion="0.067567565">
+        <state line="9" column="24" selection-start="167" selection-end="167" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/mailers/user_mailer.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="27" selection-start="230" selection-end="230" vertical-scroll-proportion="0.0">
+        <state line="24" column="28" selection-start="688" selection-end="688" vertical-scroll-proportion="0.7972973">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/candidates_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="54" selection-start="1951" selection-end="1951" vertical-scroll-proportion="0.41666666">
+        <state line="129" column="89" selection-start="4057" selection-end="4057" vertical-scroll-proportion="-0.18329467">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20150816124235_add_default_admin.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/candidate.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="29" selection-start="175" selection-end="175" vertical-scroll-proportion="0.16891892">
+        <state line="2" column="27" selection-start="57" selection-end="57" vertical-scroll-proportion="0.067567565">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/voting.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="79" selection-start="714" selection-end="714" vertical-scroll-proportion="0.4524362">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/login/login.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="71" selection-start="296" selection-end="296" vertical-scroll-proportion="0.32142857">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/candidates/voter.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="47" selection-start="837" selection-end="837" vertical-scroll-proportion="0.5714286">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/candidates/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="67" selection-start="2110" selection-end="2110" vertical-scroll-proportion="0.74201477">
           <folding />
         </state>
       </provider>

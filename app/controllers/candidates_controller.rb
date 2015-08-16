@@ -100,11 +100,11 @@ class CandidatesController < ApplicationController
     start_date =  Time.parse(params[:start_date])
     end_date  = Time.parse(params[:end_date])
     election.update_attributes(:start_date=> start_date,:end_date=>end_date)
-   first_candidate = Candidate.find(election.first_candidate).name
-   second_candidate = Candidate.find(election.second_candidate).name
+   first_candidate = candidate_name(election.first_candidate)
+   second_candidate = candidate_name(election.second_candidate)
 
     # Send mails to all the voters and selectors for voting with the time and candidates
-   users = User.where(:user_type => [2,3])
+   users = User.where(:user_type => [$is_selector,$is_voter])
    threads=Thread.new{
      users.each do |user|
    UserMailer.final_candidates_mail(user,first_candidate,second_candidate,election).deliver
@@ -128,15 +128,20 @@ class CandidatesController < ApplicationController
   # Result will appear only after time frame ends and then admin find the winner and send the mail to all
   def result
     winning_candidate = Voting.winner
+    winner =  candidate_name(winning_candidate)
     users = User.where.not(:user_type => 1)
     threads=Thread.new{
       users.each do |user|
-        UserMailer.result(user,winning_candidate).deliver
+        UserMailer.result(user,winner).deliver
       end
     }
     respond_to do |format|
-      format.html { redirect_to candidates_path,notice: 'Result Declaration mail has been sent to all the voters and selectors.' }
+      format.html { redirect_to candidates_path,notice: "#{winner} has won the election. Result Declaration mail has been sent to all the voters and selectors." }
     end
+  end
+
+  def candidate_name candidate_id
+    name = Candidate.find(candidate_id).name
   end
 
   private

@@ -16,10 +16,10 @@ class UserMailer < ActionMailer::Base
     mail :to => @to, @from=> 'Admin',:subject => 'Voting Time and candidates'
   end
 
-  def result(user,winning_candidate)
+  def result(user,winner)
     @user = user
     @to = user.email_id
-    @winning_candidate = Candidate.find(winning_candidate).name
+    @winning_candidate = winner
     mail :to => @to, @from=> 'Admin',:subject => 'Result Declaration'
   end
 end

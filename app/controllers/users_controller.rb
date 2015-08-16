@@ -98,7 +98,7 @@ class UsersController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_params
       temp=params.require(:user)
-      temp[:is_approved] = 0 if '2'.eql?temp[:user_type]
+      temp[:is_approved] = 0 if $is_selector.eql?temp[:user_type]
       temp.permit(:name, :password, :user_type, :email_id, :is_approved)
     end
 end

@@ -9,10 +9,10 @@
            <%= label_tag(:name, value.name) %></td></tr>
       <% end %>
           </table>
-        <% voted =  Voting.where(:selector_id => current_user.id).first %>
+        <% voted =  current_user.voting %>
         <% if voted.nil? %><%= submit_tag 'Vote'  %>
             <% else %>
-            <div id="voting_message">You have selected  <%= Candidate.find(voted.candidate_id).name %> for final elections.</div>
+            <div id="voting_message">You have selected  <%= voted.candidate.name %> for final elections.</div>
             <% end %>
   <% end %>
     <% unless flash[:notice].blank? %>
@@ -51,7 +51,7 @@
 
   </tbody>
 </table>    <br>
-    <% if Election.all.blank? %> <%= button_to 'Final Candidates', final_candidates_candidates_path, method: :get  %>   <%end %><br>
+    <% if Election.all.blank? %> <%= button_to 'Final Candidates', final_candidates_candidates_path, method: :get  %>   <% end %><br>
     <% unless Election.first.nil? %>
         <% unless Election.first.end_date.nil? %>
         <% if Election.first.end_date < Time.now%>

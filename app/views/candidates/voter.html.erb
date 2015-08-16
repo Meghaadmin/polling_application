@@ -7,10 +7,10 @@
         <%= label_tag(:name, @first_candidate.name) %><br><br>
         <%= radio_button_tag(:candidate_id, @election.second_candidate,:required => true ) %>
         <%= label_tag(:name, @second_candidate.name) %><br><br>
-    <% voted =  Voting.where(:selector_id => current_user.id).first %>
+    <% voted =  current_user.voting %>
     <% if voted.nil? %><%= submit_tag 'Vote'  %>
     <% else %>
-        <div id="voting_message">You have casted your vote to <%= Candidate.find(voted.candidate_id).name %></div>
+        <div id="voting_message">You have casted your vote to <%= voted.candidate.name %></div>
     <% end %>
 <% end %>
 
