@@ -1,0 +1,12 @@
+<%= form_tag(set_election_timeframe_candidates_path, :method => 'post') do  %>
+    <%= hidden_field_tag(:id ,@election.id)%>
+    <div class="field">
+      <%= label_tag(:start_date,@election.start_date)  %>
+      <%= text_field_tag(:start_date ,@election.start_date,:placeholder => "DD/MM/YYYY",:required => true)%>
+    </div>
+    <div class="field">
+      <%= label_tag(:end_date,@election.end_date) %><br>
+      <%= text_field_tag(:end_date ,@election.end_date,:placeholder => "DD/MM/YYYY",:required => true)%>
+    </div>
+    <%= submit_tag "Election Time" %>
+<% end %>

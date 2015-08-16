@@ -1,0 +1,31 @@
+<%=  button_to 'Back', root_path, method: :get  %>
+
+<%= form_for @user do |f| %>
+    <div class="field">
+      <%= f.label :name %><br>
+      <%= f.text_field :name ,:required => true%>
+    </div>
+    <div class="field">
+      <%= f.label :email_id %><br>
+      <%= f.text_field :email_id ,type:'email',:required => true%>
+    </div>
+    <%= f.radio_button :user_type, '2' %>
+    <%= f.label :user_type, 'Selector', :value => '2',:required => true %>
+    <br/>
+    <%= f.radio_button :user_type, '3' %>
+    <%= f.label :user_type, 'Voter', :value => '3' %>
+    <br/>
+    <%= submit_tag "Create" %>
+<% end %>
+<% unless flash[:error].blank? %>
+    <div id="notification_error"><%= flash[:error] %></div>
+<% end %>
+
+
+<script>
+    $(document).ready(function(){
+        setTimeout(function(){
+            $('#notification_error').hide();
+        },2000);
+    });
+</script>

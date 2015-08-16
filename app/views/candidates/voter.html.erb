@@ -1,0 +1,17 @@
+<% if @election.nil? || @election.start_date.nil?  %>
+<h2> There is no time frame for elections.We will inform you via mail.Thanks for your time.</h2>
+<% else %>
+<%= form_tag(second_voting_candidates_path, :method => 'post') do %>
+        <%= hidden_field_tag(:election_id,@election.id) %>
+        <%= radio_button_tag(:candidate_id, @election.first_candidate,:required => true ) %>
+        <%= label_tag(:name, @first_candidate.name) %><br><br>
+        <%= radio_button_tag(:candidate_id, @election.second_candidate,:required => true ) %>
+        <%= label_tag(:name, @second_candidate.name) %><br><br>
+    <% voted =  Voting.where(:selector_id => current_user.id).first %>
+    <% if voted.nil? %><%= submit_tag 'Vote'  %>
+    <% else %>
+        <div id="voting_message">You have casted your vote to <%= Candidate.find(voted.candidate_id).name %></div>
+    <% end %>
+<% end %>
+
+<% end %>

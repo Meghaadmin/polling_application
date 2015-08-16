@@ -1,0 +1,76 @@
+<!--USER TYPE SELECTOR VIEW STARTS-->
+
+<% if $is_selector.eql?current_user.user_type %>
+    <table>
+<th>Select a candidate for final election </th>
+  <%= form_tag(voting_candidates_path, :method => 'post') do %>
+      <% @candidates.each do |value| %>
+                  <tr> <td> <%= radio_button_tag(:candidate_id, value.id,:required => true ) %>
+           <%= label_tag(:name, value.name) %></td></tr>
+      <% end %>
+          </table>
+        <% voted =  Voting.where(:selector_id => current_user.id).first %>
+        <% if voted.nil? %><%= submit_tag 'Vote'  %>
+            <% else %>
+            <div id="voting_message">You have selected  <%= Candidate.find(voted.candidate_id).name %> for final elections.</div>
+            <% end %>
+  <% end %>
+    <% unless flash[:notice].blank? %>
+        <div id="candidate_message"><%= flash[:notice] %></div>
+    <% end %>
+
+ <% end %>
+
+<!--ENDS-->
+
+
+
+<!--ADMIN VIEW STARTS-->
+
+<% if $is_admin.eql?current_user.user_type %>
+
+<h1><%= link_to 'Create Candidate', new_candidate_path ,{:style=>"font-size:20px;color:#FFA500;"}%> </h1>   <br>
+
+<h2>Selectors which needs approval</h2>
+
+<table>
+  <thead>
+  <tr>
+    <th>Name</th>
+    <th>Status</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @selectors_list.each do |selector| %>
+      <tr>
+        <td><%= selector.name %></td>
+        <% if '1'.eql?selector.is_approved %> <td>Approved</td>  <%end %>
+        <% if '0'.eql?selector.is_approved %> <td><%= button_to 'Approve', approve_selector_users_path(:id => selector.id), method: :post %></td> <%end %>
+      </tr>
+  <% end %>
+
+  </tbody>
+</table>    <br>
+    <% if Election.all.blank? %> <%= button_to 'Final Candidates', final_candidates_candidates_path, method: :get  %>   <%end %><br>
+    <% unless Election.first.nil? %>
+        <% unless Election.first.end_date.nil? %>
+        <% if Election.first.end_date < Time.now%>
+        <%= button_to 'RESULT', result_candidates_path, method: :post, :style => "margin-left:500px;font-size:18px;background: PaleGreen;" %>
+         <% end %>
+        <% end %>
+    <% end %>
+    <% unless flash[:notice].blank? %>
+        <div id="candidate_message"><%= flash[:notice] %></div>
+    <% end %>
+<% end %>
+
+<!--ENDS-->
+
+
+<script>
+    $(document).ready(function(){
+        setTimeout(function(){
+            $('#candidate_message').hide();
+        },2000);
+    });
+</script>

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  start_date: 2015-08-15
+  end_date: 2015-08-15
+  first_candidate: MyString
+  second_candidate: MyString
+
+two:
+  name: MyString
+  start_date: 2015-08-15
+  end_date: 2015-08-15
+  first_candidate: MyString
+  second_candidate: MyString

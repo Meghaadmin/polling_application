@@ -1,0 +1,33 @@
+<table>
+  <tbody>
+  <%= form_for @user, as: :user, url: logged_in_login_index_path do |f| %>
+      <tr>
+        <div class="field">
+          <td> <%= f.label :email_id %>:</td>
+          <td> <%= f.text_field :email_id,type:'email',:required => true %></td>
+        </div>
+      </tr>
+      <tr>
+        <div class="field">
+          <td> <%= f.label :password %>:</td>
+          <td> <%= f.text_field :password, :type => :password, :required => true %></td>
+        </div>
+      </tr>
+      <tr> <td> <%= submit_tag('Login') %> </td> </tr>
+  <% end %>
+  </tbody>
+
+  <h2><%= link_to("Register", {:controller => "login", :action => "register"}, {:style => "color:#00FFFF;"}) %> </h2>
+
+  <% unless flash[:notice].blank? %>
+      <div id="notification"><%= flash[:notice] %></div>
+  <% end %>
+
+</table>
+<script>
+    $(document).ready(function(){
+        setTimeout(function(){
+            $('#notification').hide();
+        },2000);
+    });
+</script>
